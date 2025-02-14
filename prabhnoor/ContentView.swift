@@ -22,3 +22,11 @@ struct ContentView: View {
         Text("Hello, World!")
     }
 }
+var body: some View {
+    ZStack {
+        // Background Gradient
+        LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+        Text("Hello, World!")
+    }
+}

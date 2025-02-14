@@ -274,4 +274,6 @@ Text("\(number)")
 Text("Prime Number Game")
     .accessibilityLabel("Game Title")
     .accessibilityHint("Displays the title of the Prime Number Game")
+// Adding final comments and cleaning up code
+// Game Logic and UI are fully implemented
 

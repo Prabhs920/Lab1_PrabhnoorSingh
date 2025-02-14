@@ -262,4 +262,8 @@ Button(action: {
         .cornerRadius(30)
         .shadow(radius: 10)
 }
+Text("Prime Number Game")
+    .font(.custom("Arial", size: 30)) // Replace with custom font
+    .fontWeight(.bold)
+    .foregroundColor(.white)
 

@@ -242,4 +242,10 @@ if attempts % 10 == 0 {
 } message: {
     Text("Correct: \(correctAnswers)\nWrong: \(wrongAnswers)")
 }
+func resetGame() {
+    correctAnswers = 0
+    wrongAnswers = 0
+    attempts = 0
+    nextRound()
+}
 

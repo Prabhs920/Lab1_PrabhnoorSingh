@@ -271,4 +271,7 @@ Text("\(number)")
     .font(.system(size: 100, weight: .heavy, design: .rounded))
     .foregroundColor(.white)
     .shadow(radius: 5)
+Text("Prime Number Game")
+    .accessibilityLabel("Game Title")
+    .accessibilityHint("Displays the title of the Prime Number Game")
 

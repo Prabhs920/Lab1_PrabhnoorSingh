@@ -237,4 +237,9 @@ if attempts % 10 == 0 {
 } else {
     nextRound()
 }
+.alert("Game Summary", isPresented: $showResult) {
+    Button("OK", action: resetGame)
+} message: {
+    Text("Correct: \(correctAnswers)\nWrong: \(wrongAnswers)")
+}
 

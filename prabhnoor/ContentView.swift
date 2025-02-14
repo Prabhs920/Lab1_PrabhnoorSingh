@@ -210,4 +210,11 @@ var body: some View {
         }
     }
 }
+func isPrime(_ num: Int) -> Bool {
+    guard num > 1 else { return false }
+    for i in 2..<num where num % i == 0 {
+        return false
+    }
+    return true
+}
 

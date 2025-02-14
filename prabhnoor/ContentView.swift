@@ -217,4 +217,15 @@ func isPrime(_ num: Int) -> Bool {
     }
     return true
 }
+func checkAnswer(isPrime: Bool) {
+    if isPrime == true {
+        correctAnswers += 1
+        isCorrect = true
+    } else {
+        wrongAnswers += 1
+        isCorrect = false
+    }
+    
+    attempts += 1
+}
 

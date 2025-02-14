@@ -45,3 +45,24 @@ var body: some View {
         }
     }
 }
+var body: some View {
+    ZStack {
+        LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+
+        VStack(spacing: 40) {
+            Text("Prime Number Game")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .shadow(radius: 5)
+
+            // Displaying the number
+            Text("\(number)")
+                .font(.system(size: 100, weight: .heavy, design: .rounded))
+                .foregroundColor(.white)
+                .shadow(radius: 5)
+        }
+    }
+}
+

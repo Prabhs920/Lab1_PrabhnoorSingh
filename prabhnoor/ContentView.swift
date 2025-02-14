@@ -232,4 +232,9 @@ func nextRound() {
     number = Int.random(in: 1...100)
     isCorrect = nil
 }
+if attempts % 10 == 0 {
+    showResult = true
+} else {
+    nextRound()
+}
 

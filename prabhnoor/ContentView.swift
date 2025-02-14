@@ -248,4 +248,18 @@ func resetGame() {
     attempts = 0
     nextRound()
 }
+// Updated Prime Button with improved styling
+Button(action: {
+    checkAnswer(isPrime: true)
+}) {
+    Text("Prime")
+        .font(.title2)
+        .fontWeight(.bold)
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(Color.green)
+        .foregroundColor(.white)
+        .cornerRadius(30)
+        .shadow(radius: 10)
+}
 

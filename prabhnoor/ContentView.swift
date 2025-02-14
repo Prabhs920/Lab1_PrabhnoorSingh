@@ -30,3 +30,18 @@ var body: some View {
         Text("Hello, World!")
     }
 }
+var body: some View {
+    ZStack {
+        LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+
+        VStack(spacing: 40) {
+            // Title Label
+            Text("Prime Number Game")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .shadow(radius: 5)
+        }
+    }
+}

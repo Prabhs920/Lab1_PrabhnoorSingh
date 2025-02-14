@@ -90,4 +90,59 @@ var body: some View {
         }
     }
 }
+var body: some View {
+    ZStack {
+        LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+
+        VStack(spacing: 40) {
+            Text("Prime Number Game")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .shadow(radius: 5)
+
+            Text("\(number)")
+                .font(.system(size: 100, weight: .heavy, design: .rounded))
+                .foregroundColor(.white)
+                .shadow(radius: 5)
+
+            Text("Is this number Prime?")
+                .font(.title3)
+                .foregroundColor(.white)
+                .opacity(0.8)
+
+            HStack(spacing: 20) {
+                Button(action: {
+                    checkAnswer(isPrime: true)
+                }) {
+                    Text("Prime")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 10)
+                }
+
+                Button(action: {
+                    checkAnswer(isPrime: false)
+                }) {
+                    Text("Not Prime")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 10)
+                }
+            }
+            .padding(.horizontal, 30)
+        }
+    }
+}
 

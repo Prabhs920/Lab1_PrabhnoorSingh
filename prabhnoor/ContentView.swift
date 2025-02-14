@@ -266,4 +266,9 @@ Text("Prime Number Game")
     .font(.custom("Arial", size: 30)) // Replace with custom font
     .fontWeight(.bold)
     .foregroundColor(.white)
+// Enhanced styling for number display and buttons
+Text("\(number)")
+    .font(.system(size: 100, weight: .heavy, design: .rounded))
+    .foregroundColor(.white)
+    .shadow(radius: 5)
 

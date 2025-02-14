@@ -228,4 +228,8 @@ func checkAnswer(isPrime: Bool) {
     
     attempts += 1
 }
+func nextRound() {
+    number = Int.random(in: 1...100)
+    isCorrect = nil
+}
 
